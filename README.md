@@ -1,12 +1,62 @@
-# React + Vite
+# VideoOverlayComponent
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a React component that displays a background video with an overlay and centered content on top. It is built with [Vite](https://vitejs.dev/) for fast and modern development.
 
-Currently, two official plugins are available:
+## Main Structure
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **src/components/VideOverlay.jsx**  
+  Main component that renders the video, overlay, and centered content.
 
-## Expanding the ESLint configuration
+- **src/assets/hero_video.mp4**  
+  Video file used as the background (add your own video to this path if it doesn't exist).
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **src/App.css**  
+  Styles for the responsive layout, video, overlay, and content.
+
+## Features
+
+- Responsive and centered background video.
+- Semi-transparent dark overlay for better content readability.
+- Vertically and horizontally centered content over the video.
+- Mobile-friendly design.
+
+## Installation
+
+1. Clone the repository:
+
+   ```sh
+   git clone <repository-url>
+   cd VideoOverlayComponent
+   ```
+
+2. Install dependencies:
+
+   ```sh
+   npm install
+   ```
+
+3. Start the development server:
+
+   ```sh
+   npm run dev
+   ```
+
+4. Open [http://localhost:5173](http://localhost:5173) in your browser.
+
+## Customization
+
+- Change the background video by replacing `src/assets/hero_video.mp4`.
+- Modify the content in `VideOverlay.jsx`.
+- Adjust styles in `App.css` to change colors, sizes, or responsiveness.
+
+## File Structure
+
+```
+src/
+  assets/
+    hero_video.mp4
+  components/
+    VideOverlay.jsx
+  App.css
+  main.jsx
+```
